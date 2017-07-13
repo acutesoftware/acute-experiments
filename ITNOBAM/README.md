@@ -19,5 +19,14 @@ or through prespecified 'dont do this' events.
 
 ### How will it do this
 
+Not sure - but some starting points are below
+
 - data collection and monitoring of actions
 - user will need to get used to the system BEFORE losing cognitive control in order to 'trust' it
+
+
+### Links 
+
+Requirements
+
+Design document
