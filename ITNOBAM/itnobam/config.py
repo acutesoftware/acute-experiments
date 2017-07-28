@@ -20,4 +20,18 @@ people = [
     {'name':'Jane', 'id':'secondary_carer'},
     {'name':'Nick', 'id':'doctor'},
     ]
+
+data_storage = [
+    {'name':'Hard Drive', 'unc':'\\treebeard\c\files'},
+    {'name':'NAS', 'unc':'\\fangorn\data\itnobam'},
+    {'name':'Website', 'unc':'http://www.acutesoftware.com.au'},
+    {'name':'Google Drive', 'unc':'https://drive.google.com/drive/'},
+    ]
+    
+sensor_types = [
+    {'name':'motion sensor', 'poll_frequency':'trigger'},
+    {'name':'light sensor', 'poll_frequency':'1 minute'},
+    {'name':'sound sensor', 'poll_frequency':'trigger'},
+]    
+    
     
