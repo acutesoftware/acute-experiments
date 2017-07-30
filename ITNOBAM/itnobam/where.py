@@ -40,10 +40,11 @@ def which_room_am_i_in():
     """
     uses the monitor module to determine which room the user is in
     """
-    
-    
-    return ":Unknown Room"
-    
+    import monitor
+    s = monitor.Sensors()
+    s.scan()
+    return s.which_room_am_i_in()
+   
     
     
     return me
