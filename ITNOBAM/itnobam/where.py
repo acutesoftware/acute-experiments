@@ -31,8 +31,19 @@ def where_am_i():
     me = context.where_am_i()
     
     # expand this with details on room/chair via sensors
+    me += which_room_am_i_in()
     
-    # 
+    return me
+
+    
+def which_room_am_i_in():
+    """
+    uses the monitor module to determine which room the user is in
+    """
+    
+    
+    return ":Unknown Room"
+    
     
     
     return me
