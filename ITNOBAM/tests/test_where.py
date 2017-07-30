@@ -11,13 +11,13 @@ sys.path.append(root_fldr)
 import where
 
 
-class ConfigTest(unittest.TestCase):
+class WhereTest(unittest.TestCase):
 
-    def test_01_areas(self):
+    def test_01_whereami(self):
         
         loc = where.where_am_i()
-        #print('loc=', loc)
-        self.assertTrue(len(loc), 'Home')
+        print('loc=', loc)
+        self.assertEqual(loc, 'HomeBedroom')
 
      
 if __name__ == '__main__':
