@@ -29,8 +29,8 @@ The user has a cognitive disorder that will get worse over time.
 The system should give the best advice to the user for the users benefit.
 The user has previously instructed but taking into consideration the cognitive condition.
 
- > User wants to continue living at home
- > Doctor agrees, but over time condition gets worse. 
+* User wants to continue living at home
+* Doctor agrees, but over time condition gets worse. 
 
 How / when should the system tell the user that they should listen to the 
 Doctor and go.
@@ -42,9 +42,9 @@ User trusts most carers, and all is good.
 Is there a check for carers with a financial interest in the user (ie family 
 home could be sold if user is moved into care?)
 
- > How should the system weigh these decisions?
- > When should the user notify the system to take this into account?
- > Who does the user trust to mediate this?
+* How should the system weigh these decisions?
+* When should the user notify the system to take this into account?
+* Who does the user trust to mediate this?
 
 
 #### When to trust yourself
@@ -53,10 +53,10 @@ The user specifies the priorities at the start before they lose full cognitive
 abilities.
 
 User can tell system to modify these priorities during examples like
- > user has a mental breakdown
- > user is drunk
- > user is suicidal
- > user has a really bad day and though not suicidal, is playing fast and free.
+* user has a mental breakdown
+* user is drunk
+* user is suicidal
+* user has a really bad day and though not suicidal, is playing fast and free.
 
 How/If the system can determine this is to be looked into.
  
