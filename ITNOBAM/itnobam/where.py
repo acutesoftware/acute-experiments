@@ -13,7 +13,35 @@ pth = os.path.join(root_folder, 'AIKIF', 'aikif', 'lib' )
 sys.path.append(pth)
 import cls_context as context
 
+places = [
+    'home',
+    'work',
+    'sons house',
+    'daughters house',
+    'friend#1',
+    'friend#2',
+    'friend#3',
+    'restaurant#1',
+    'restaurant#2',
+    'restaurant#3',
+    'park',
+    'beach',
+    'doctors',
+    'hospital',
+    ]
+    
 
+home = [
+    'lounge',
+    'kitchen',
+    'bedroom',
+    'spare room',
+    'front yard',
+    'back yard',
+    'garage'
+    ]
+    
+    
 def main():
     """
     main function used for testing 
