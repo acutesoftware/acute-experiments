@@ -24,8 +24,9 @@ class WhereTest(unittest.TestCase):
         #e = where.environment.Environment('test_where')
         #self.assertEqual(str(e), 'Environment: test_where\n')
         #print(e)
-        e = where.setup_environments()
-        print(e)
+        all_env = where.setup_environments()
+        for e in all_env:
+            print(e)
      
 if __name__ == '__main__':
     unittest.main()
