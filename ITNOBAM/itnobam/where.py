@@ -9,8 +9,11 @@ import sys
 #            import aikif.lib.cls_context as context
 # but for now add in the path and use local copy
 root_folder = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..") ) 
-pth = os.path.join(root_folder, 'AIKIF', 'aikif', 'lib' )
+pth = os.path.join(root_folder, 'AIKIF', 'aikif', 'environments' )
 sys.path.append(pth)
+import environment
+pth2 = os.path.join(root_folder, 'AIKIF', 'aikif', 'lib' )
+sys.path.append(pth2)
 import cls_context as context
 
 places = [
@@ -77,8 +80,16 @@ def which_room_am_i_in():
     
     return me
     
-    
+def setup_environments():
+    env = []
+    for room in home:
+        e = environment.Environment(room)
+        print(room)
+        #print(e)
+        #env.append(e)
+
+    return env
 
     
 if __name__ == '__main__':
-    unittest.main()
+    setup_environments()

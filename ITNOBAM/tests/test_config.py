@@ -8,7 +8,7 @@ import os
 root_fldr = os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + os.sep + ".." + os.sep + "itnobam" )
 
 sys.path.append(root_fldr)
-import config
+import itnobam_config as config
 
 
 class ConfigTest(unittest.TestCase):

@@ -4,6 +4,8 @@
 #
 # module to handle the sensors and monitoring of users world
 
+import itnobam_config as config
+
 def main():
     """
     main function used for testing 
@@ -19,7 +21,7 @@ class Sensors:
         """
         scan all sensors
         """
-        import config
+        
         for area in config.areas:
             #print('area = ',area)
             #print('area = ',area[sensor_id])
@@ -35,4 +37,4 @@ class Sensors:
 
     
 if __name__ == '__main__':
-    unittest.main()
+    main()

@@ -19,6 +19,13 @@ class WhereTest(unittest.TestCase):
         print('loc=', loc)
         self.assertEqual(loc, 'HomeBedroom')
 
+    def test_02_environment(self):
+        
+        #e = where.environment.Environment('test_where')
+        #self.assertEqual(str(e), 'Environment: test_where\n')
+        #print(e)
+        e = where.setup_environments()
+        print(e)
      
 if __name__ == '__main__':
     unittest.main()
