@@ -84,9 +84,7 @@ def setup_environments():
     env = []
     for room in home:
         e = environment.Environment(room)
-        print(room)
-        #print(e)
-        #env.append(e)
+        env.append(e)
 
     return env
 
