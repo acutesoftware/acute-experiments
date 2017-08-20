@@ -11,7 +11,7 @@ import sys
 root_folder = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..") ) 
 pth = os.path.join(root_folder, 'AIKIF', 'aikif', 'environments' )
 sys.path.append(pth)
-import environment
+import room as env
 pth2 = os.path.join(root_folder, 'AIKIF', 'aikif', 'lib' )
 sys.path.append(pth2)
 import cls_context as context
@@ -81,12 +81,12 @@ def which_room_am_i_in():
     return me
     
 def setup_environments():
-    env = []
+    myenv = []
     for room in home:
-        e = environment.Environment(room)
-        env.append(e)
+        e = env.Room(room)
+        myenv.append(e)
 
-    return env
+    return myenv
 
     
 if __name__ == '__main__':
