@@ -62,4 +62,11 @@ Have one application running that does all the work.
 
 Will start off with this for prototyping
 
+
+### Embedded Software
+
+Non updatable C code on an embedded computer.
+
+
+
  
