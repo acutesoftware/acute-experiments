@@ -10,9 +10,9 @@ import what
 import where
 
 scenarios = [
-    'memory loss',
-    'lack of movement',
-    'mild confusion',
+    {'name':'memory loss'},
+    {'name':'lack of movement'},
+    {'name':'mild confusion'},
     ]
             
 
@@ -24,13 +24,29 @@ preferred_outcome = [
     
     
 path_to_solve = []
-    
+ 
+
+
+ 
             
 def main():
     """
     main function used for testing 
     """
-    print('calculating best response..')
+    print(why_did_that_happen(scenarios[0]))
+ 
+
+def why_did_that_happen(scenario):
+    """
+    uses the other modules with sensors to try 
+    and identify why the 'scenario' occurred.
+    """
+    print('calculating best response why ' + scenario['name'] + ' occurred')
+    return 'No idea'
+   
+    
+    
+    
     
 
     
