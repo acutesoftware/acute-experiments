@@ -11,7 +11,7 @@ sys.path.append(root_fldr)
 import why
 
 
-class ConfigTest(unittest.TestCase):
+class WhyTest(unittest.TestCase):
 
     def test_01_why(self):
         res = why.why_did_that_happen(why.scenarios[0])
