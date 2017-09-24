@@ -16,7 +16,7 @@ class WhyTest(unittest.TestCase):
     def test_01_why(self):
         res = why.why_did_that_happen(why.scenarios[0])
         print(res)
-        self.assertEqual(res, 'No idea')
+        self.assertEqual(res, 'You just woke up')
 
     
 if __name__ == '__main__':
