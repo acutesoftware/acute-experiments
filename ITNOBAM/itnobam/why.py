@@ -42,6 +42,15 @@ def why_did_that_happen(scenario):
     and identify why the 'scenario' occurred.
     """
     print('calculating best response why ' + scenario['name'] + ' occurred')
+    
+    loc = where.which_room_am_i_in()
+    
+    print('loc = ' + loc)
+    
+    if loc == 'Bedroom':
+        return 'You just woke up'
+    
+    
     return 'No idea'
    
     
