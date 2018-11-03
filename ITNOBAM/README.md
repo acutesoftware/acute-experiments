@@ -10,8 +10,8 @@
 Help people with cognitive issues
 
 
-The goal of the AI agent is to help you by tracking your actions, movements, PC usage, verbal intent 
-and find odd patterns and assist / recommend actions if you are doing things outside of normal patterns 
+The goal of the AI agent is to help you by tracking your actions, movements, PC usage, verbal intent
+and find odd patterns and assist / recommend actions if you are doing things outside of normal patterns
 (e.g. putting a book on the stovetop)
 or through prespecified 'dont do this' events.
 
@@ -25,8 +25,8 @@ Not sure - but some starting points are below
 - user will need to get used to the system BEFORE losing cognitive control in order to 'trust' it
 
 
-### Links 
+### Links
 
 Requirements
 
-Design document
+(Design document)[https://github.com/acutesoftware/acute-experiments/blob/master/ITNOBAM/docs/Design%20Notes.md]
