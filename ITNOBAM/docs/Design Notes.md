@@ -4,8 +4,8 @@
 
 ### Finding the standard baseline
 
-Setup will need to map the living area of high care patients but normal 
-standard operations should be automatically configured and learn what is 
+Setup will need to map the living area of high care patients but normal
+standard operations should be automatically configured and learn what is
 normal over time.
 
 
@@ -21,3 +21,5 @@ Probably via initial setup interviews, with default suggestions
 
 
 The interview stage must appear friendly and non intrusive ie clarification if actions rather than straight out "whats your fav colors"
+
+[Back to readme](../README.md)
