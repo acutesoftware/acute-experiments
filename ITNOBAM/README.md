@@ -29,4 +29,4 @@ Not sure - but some starting points are below
 
 Requirements
 
-(Design document)[https://github.com/acutesoftware/acute-experiments/blob/master/ITNOBAM/docs/Design%20Notes.md]
+[Design document](docs/Design%20Notes.md)
