@@ -1,21 +1,24 @@
+#!/usr/bin/python3
+# coding: utf-8
 # tucuro.py
 
-def connect():
-  """
-  connects to a gaming platform, sending character data
-  """
-  pass
+import os
 
-def import_stats():
-  """
-  downloads stats from a gaming platform and imports to
-  local store
-  """
-  pass
 
-def send_character_stats():
-  """
-  sends your character statistics to the gaming platform
-  via a mapping function defined by the platform
-  """
-  pass
+def main():
+    interface_list = [d for d in os.listdir('interface') if os.path.isdir(os.path.join('interface',d))]
+    for interface in interface_list:
+        print('import stats from ' + interface)
+
+
+def import_stats(game):
+    """
+    imports stats to standard format using definitions
+    in 'interface' folder
+    """
+
+
+
+
+if __name__ == "__main__":
+    main()
