@@ -19,13 +19,14 @@ def import_game_data(interface):
     try:
         with open(os.path.join('interface', interface, 'map.json')) as f:
             print('importing stats from ' + interface)
-            res = f.read()
+            res = json.loads(f.read())
             read_game_stats(res)
     except Exception as ex:
-        print('no mapping file defined for ' + interface)
+        print('no mapping file defined for ' + interface + str(ex))
 
-def read_game_stats(json_raw):
-    print(json_raw)
+def read_game_stats(json_data):
+    print(json.dumps(json_data))
+    print(json_data["name"])
 
 
 if __name__ == "__main__":
