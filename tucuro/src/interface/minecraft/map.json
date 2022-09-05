@@ -1,0 +1,8 @@
+{
+    "name":"yourminecraftname",
+    "display":"minecraft_skin.jpg",
+    "stats":[
+        {"time_played":"minecraft.character.time_played"},
+        {"kills":100}
+    ]
+}
