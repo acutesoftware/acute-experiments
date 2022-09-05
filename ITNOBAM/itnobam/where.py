@@ -9,7 +9,8 @@ import sys
 #            import aikif.lib.cls_context as context
 # but for now add in the path and use local copy
 root_folder = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..") ) 
-pth = os.path.join(root_folder, 'AIKIF', 'aikif', 'environments' )
+root_folder = r'U:\dev\src\python'
+pth = os.path.join(root_folder,  'AIKIF', 'aikif', 'environments' )
 sys.path.append(pth)
 import room as env
 pth2 = os.path.join(root_folder, 'AIKIF', 'aikif', 'lib' )

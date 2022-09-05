@@ -9,9 +9,13 @@ by uncommenting devices the sensor has.
 
 this is used to work out what to measure and when to trigger events to the main robot.
 
-[ ] Temperature reading
-[ ] Noise Level
-[ ] Distance to wall
-[ ] Humidity
+````
+    [ ] Temperature reading
+    [ ] Noise Level
+    [ ] Distance to wall
+    [ ] Humidity
+
+````
+
 
 
