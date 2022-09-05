@@ -4,6 +4,7 @@
 
 import os
 import sys
+import random
 
 things = [
     'chair',
@@ -18,10 +19,17 @@ def main():
     """
     main function used for testing 
     """
-    print('todo')
+    viewpoint = 'Lounge - looking North'
+    res = get_object_at_location(viewpoint)
+    print('This is a ' + res)
 
-def what_is_that(thing_to_identify):
-    if type(thing_to_identify) is str:
-        return 'Furniture'
-    else:
-        return 'TODO'
+def get_object_at_location(viewpoint):
+    """
+    gets the object visible in focus of the main front camera of the user
+    """
+    print('Identifying object at ' + str(viewpoint))
+    
+
+    return random.choice(things)
+
+main()
