@@ -92,4 +92,19 @@ Tasks the moveable robot can do
 
 ````
 
+#### Sensor List
+
+The details of the sensor need to be specified in the sensor_config.py
+by uncommenting devices the sensor has.
+
+this is used to work out what to measure and when to trigger events to the main robot.
+
+````
+    [ ] Temperature reading
+    [ ] Noise Level
+    [ ] Distance to wall
+    [ ] Humidity
+
+````
+
 
