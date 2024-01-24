@@ -10,7 +10,7 @@ The final 'end user' design will be a lot simpler (interface wise), infact it pr
 
 But, for now - we are going to make it will lots of bells and whistles!
 
-![Front Panel](https://github.com/acutesoftware/acute-experiments/cyberdeck/cyberdeck_03.PNG)
+![Front Panel](https://github.com/acutesoftware/acute-experiments/blob/master/cyberdeck/cyberdeck_03.png)
 
 Image of front panel
 
