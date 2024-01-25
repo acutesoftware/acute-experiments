@@ -5,6 +5,7 @@
 # This is the main menu to be run on the cyberdeck
 import sqlite3
 import utils
+import sys
 
 def main():
     print('WELCOME TO CYBERDECK')
@@ -16,10 +17,20 @@ def main():
     while current_menu != 'EXIT':
         for row_num, row in enumerate(res):
             if row[0] == current_menu:
-                print(row[1] + ' = ' + row[3])
+                print(str(row_num) + ' = ' + row[3])
+        print('99 = Back to root menu')            
         x = input('Enter menu > ')
-        current_menu = x.upper()
-        #if current_menu
+        if x == '':
+            sys.exit()
+        if x == '99':
+            current_menu = 'ROOT'
+        else:
+            selected_option = res[int(x)][1]
+            selected_parent = res[int(x)][0]
+            print(selected_option)
+            current_menu = selected_option
+            if selected_parent != 'ROOT':
+                print('running command : ' + current_menu)
 
 
 
