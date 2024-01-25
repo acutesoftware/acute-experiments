@@ -1,0 +1,33 @@
+id,menu_id,parent_id,sort_order,menu_text,help_text
+1,ROOT,,0,Root menu,hide this
+2,AUDIO,ROOT,1,Audio Tasks,Audio tasks
+3,RADIO,ROOT,2,Radio Tasks,Radio tasks
+4,VIDEO,ROOT,3,Video Tasks,Video tasks
+5,ROBOT,ROOT,4,Robot Tasks,Robot tasks
+6,NETWORK,ROOT,5,Network Tasks,Network tasks
+7,DATA,ROOT,6,Data Tasks,Data tasks
+8,POWER,ROOT,7,Power Tasks,Power tasks
+9,MISC,ROOT,8,Misc Tasks,Misc tasks
+10,EXIT,ROOT,9,Exit to system,Quit this menu and return to linux prompt (type menu to restart later)
+11,AUDIO_PLAY,AUDIO,11,MP3 Player,Play MP3s
+12,AUDIO_SFX,AUDIO,12,Sound Effects,
+13,RADIO_HF,RADIO,21,Scan HF,Set SDR to scan HF channels
+14,RADIO_VHF,RADIO,22,Scan VHF,Set SDR to scan VHF channels
+15,RADIO_UHF,RADIO,23,Scan UHF,Set SDR to scan UHF channels
+16,RADIO_TX,RADIO,24,Transmit,
+17,VIDEO_PLAY,VIDEO,31,Play video,
+18,VIDEO_CAM,VIDEO,32,Camera,use camera to take photo
+19,VIDEO_REC,VIDEO,33,Record video,use camera
+20,ROBOT_TEST,ROBOT,41,Robot Self test,
+21,NETWORK_WIFI_LIST,NETWORK,51,List Wifi devices,
+22,NETWORK_CONN,NETWORK,52,Connect to device,
+23,NETWORK_DISC,NETWORK,53,Disconnect a device,
+24,DATA_LIST,DATA,61,List summary of attached storage,
+25,DATA_CP_A_C,DATA,62,Copy USB-A to USB-C,Full disk copy
+26,DATA_CP_C_A,DATA,63,Copy USB-C to USB-A,Full disk copy
+27,POWER_USAGE,POWER,71,Show Power usage,Show usage
+28,POWER_SAVE,POWER,72,Enter Power save mode,
+29,POWER_FULL,POWER,73,Full Power all devices,
+30,MISC_01,MISC,81,Misc Task 1,
+34,MISC_02,MISC,82,Misc Task 2,
+35,MISC_03,MISC,83,Misc Task 3,
