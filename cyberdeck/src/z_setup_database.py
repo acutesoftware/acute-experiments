@@ -15,7 +15,7 @@ db_file = r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\buildr.db'
 def_lp_tables = [ # [table_name, description, grain_cols, col_list, cols_INT, cols_REAL, cols_BLOB]
     # CREATED AUTOMATICALLY ['s_filelist_raw', 'List of Raw files', 'fullFilename', 'fullFilename, name, path, size, date, dummy', ['size'], [], []],
     ['o_part_types', 'Part types', 'part_type_desc', 'part_type_desc', [], [], []],
-
+    #    ['o_parts', 'Parts', 'nme,part_type_id,dsc,quant', 'nme', ['quant'], [], []],
 ]
 
 def_lp_jobs = [ # proj_id, job_num, job_id, details
@@ -27,6 +27,8 @@ def_lp_job_steps = [ # job_id, job_num, step_num, job_type, details, sql_to_run
     
 
     [ 'LOAD_DATA', 0, 1, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\p_menu.csv', '', 'Load ref file CSV files into own tables', '', ''],
+    [ 'LOAD_DATA', 0, 2, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\o_interface.csv', '', 'Load ref file CSV files into own tables', '', ''],
+    [ 'LOAD_DATA', 0, 3, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\o_parts.csv', '', 'Load ref file CSV files into own tables', '', ''],
 
 ]
 
@@ -85,6 +87,7 @@ def populate_sample_prod_data(conn):
     sql.append("INSERT INTO o_part_types (part_type_desc) VALUES ('Software')")
     sql.append("INSERT INTO o_part_types (part_type_desc) VALUES ('Service')")
   
+
 
     # now run all the SQL commands
     for s_num, s in enumerate(sql):

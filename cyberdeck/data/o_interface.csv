@@ -1,0 +1,21 @@
+if_id,if_name,anl_or_dig,ip_op,switches_needed,knobs_needed,conn_needed,notes,quant,shop_url
+temp,Temperature,A,I,0,0,0,already have sensor,1,
+air_pres,Pressure,A,I,0,0,0,to get,1,https://www.amazon.com/AEDIKO-Pressure-Digital-Barometric-Controller/dp/B0BZHCB91G
+humidity,Humidty,A,I,0,0,0,already have sensor,1,
+light,Light Level,A,I,0,0,0,already have sensor,1,
+air_qual,Air Quality PPM Sensor,A,I,0,0,0,needs air access - put near fan,0,https://www.auselectronicsdirect.com.au/optical-dust-air-quality-sensor-module-for-arduino
+mag_field,Magnetic Field Strength,A,I,0,0,0,Linear Hall Sensor,0,https://www.instructables.com/Arduino-37-in-1-Sensors-Kit-Explained/
+accel,Accelerometer,A,I,0,0,0,Needs 3 A/D inputs? (tilt in all angles),0,https://www.amazon.com/dp/B0CDL8DVZ7
+sound,Sound,A,I,2,1,2,make circuit,1,
+dig_ip,Digital Input,D,I,1,0,1,direct TTL input,4,
+dig_op,Digital Output,D,O,1,0,1,direct TTL output,4,
+an_ip,Analog Input,A,I,1,0,1,0-5V,4,
+an_op,Analog Output,A,O,1,0,1,0-5V,2,
+power_in,Power Input,D,I,1,0,1,main power input,0,
+power_5v,5V power supply,D,O,1,0,2,power output - banana or small connectors,2,
+power_12v,12V power supply,D,O,1,0,2,power output - banana or small connectors,2,
+power_var,variable power supply,D,O,1,1,2,power output - banana or small connectors,2,
+usb_charge_op,USB charger,D,O,0,0,2,dual USB charger 1A,1,
+usb_port,USB port / hub,D,IO,0,0,5,small hub,2,
+
+
