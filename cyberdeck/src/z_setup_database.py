@@ -88,6 +88,13 @@ def populate_sample_prod_data(conn):
     sql.append("INSERT INTO o_part_types (part_type_desc) VALUES ('Service')")
   
 
+    sql.append("""CREATE VIEW u_parts AS
+select tp.part_type_desc, prt.nme, prt.dsc, prt.quant 
+from o_parts prt, o_part_types tp
+where prt.part_type_id = tp.id               
+""")
+
+
 
     # now run all the SQL commands
     for s_num, s in enumerate(sql):
