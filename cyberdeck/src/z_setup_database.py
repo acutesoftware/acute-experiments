@@ -94,6 +94,13 @@ from o_parts prt, o_part_types tp
 where prt.part_type_id = tp.id               
 """)
 
+    sql.append("""CREATE VIEW u_menu AS
+select id, menu_id, parent_id, sort_order, menu_text, help_text,
+'fn_' || menu_id || '.py' as script_name,
+'from ' || lower(parent_id) || ' import fn_' || menu_id || ' as mod_' || lower(menu_id) as script_import,
+'C:\C_DATA\dev\src\acute_experiment\cyberdeck\src\' || lower(menu_id) || '\' as script_folder
+ from p_menu
+""")
 
 
     # now run all the SQL commands
