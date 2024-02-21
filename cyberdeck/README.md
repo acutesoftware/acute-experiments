@@ -24,4 +24,35 @@ Image of front panel
 6. real world use
 
 
+### Requirements
+Export the p_menu table to get the list of menu commands which relate directly to functions to be done.
+
+Each requirement is grouped into the following main areas
+ - Audio
+ - Data
+ - Misc
+ - Network
+ - Radio
+ - Robot
+ - Video
+
+ Requirements may span multiple areas but generally have one main area they can live in.
+
+ Each area has a root folder and one main python module for that area (which can call as many additional programs as needed).
+
+ Each requirement is a single python script 
+ `\[area]\fn_[area]_[requirementName].py`
+
+
+### Features
+The following features are built into the cyberdeck
+
+Export the o_features table which has a list of the components to use.
+
+Another table will map how these are built - ie which parts are used to make a features
+(eg Audio Amp needs: vol control, audio amplifier, speaker, on/off switch, 3.5mm input, 3.5mm ouput)
+
+### Requirements mapped to features
+
+Once the features are thought out - map them to requirements to ensure that all requirements can be met by the design.
 
