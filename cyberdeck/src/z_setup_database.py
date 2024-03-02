@@ -30,6 +30,8 @@ def_lp_job_steps = [ # job_id, job_num, step_num, job_type, details, sql_to_run
     [ 'LOAD_DATA', 0, 2, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\o_interface.csv', '', 'Load ref file CSV files into own tables', '', ''],
     [ 'LOAD_DATA', 0, 3, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\o_parts.csv', '', 'Load ref file CSV files into own tables', '', ''],
     [ 'LOAD_DATA', 0, 4, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\o_feature.csv', '', 'Load ref file CSV files into own tables', '', ''],
+    [ 'LOAD_DATA', 0, 5, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\f_feature_interface.csv', '', 'Load ref file CSV files into own tables', '', ''],
+
 
 ]
 
