@@ -1,3 +1,12 @@
-feature_name,desc,
-Audio Amp,"Audio Amplifier with speaker, vol control and input output connectors"
-USB Charger,USB power charging ports with 2.5A outlets for USB-A and USB-C 
+feature_id,feature_name,desc,
+power,Power management,"Battery with multiple regulators, all switchable and optionally powered by external USB-C"
+amp,Audio Amp,"Audio Amplifier with speaker, vol control and input output connectors"
+usb_charge,USB Charger,USB power charging ports with 2.5A outlets for USB-A and USB-C 
+cpu,Computer, "Single board CPU running Linux - runs headless or optional mouse, keyboard, LCD"
+usb_hub,USB Ports, multiple USB ports running off the PC
+data_log,Data Logger,"Arduino with sensors for Light, Temp, Pressure, Air quality, Noise level"
+comm_rf_rec,SDR radio via PC,"Software Defined Radio plugs into USB PC"
+comm_wifi,Wifi on PC,"Full control"
+comm_IR,IR Port,Probably on Arduino for remote control testing
+comm_Bluetoot,Bluetooth TX/RX,
+comm_NFC,NFC read/write,
