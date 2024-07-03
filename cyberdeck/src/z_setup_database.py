@@ -87,6 +87,7 @@ def populate_sample_prod_data(conn):
     sql.append("INSERT INTO o_part_types (part_type_desc) VALUES ('Misc')")
     sql.append("INSERT INTO o_part_types (part_type_desc) VALUES ('Software')")
     sql.append("INSERT INTO o_part_types (part_type_desc) VALUES ('Service')")
+    sql.append("INSERT INTO o_part_types (part_type_desc) VALUES ('External')")
   
 
     sql.append("""CREATE VIEW u_parts AS
