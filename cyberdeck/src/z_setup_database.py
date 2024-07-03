@@ -5,15 +5,16 @@
 import os 
 import sys 
 import sqlite3
-
-sys.path.append(r"C:\C_DATA\dev\src\procgen\src\genCode")
 import if_sqllite
 
-db_file = r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\buildr.db'
+data_folder = r'/home/duncan/dev/src/python/acute-experiments/cyberdeck/data'
+src_folder = r'/home/duncan/dev/src/python/acute-experiments/cyberdeck/src'
+
+
+db_file = os.path.join(data_folder, 'buildr.db')
 
 
 def_lp_tables = [ # [table_name, description, grain_cols, col_list, cols_INT, cols_REAL, cols_BLOB]
-    # CREATED AUTOMATICALLY ['s_filelist_raw', 'List of Raw files', 'fullFilename', 'fullFilename, name, path, size, date, dummy', ['size'], [], []],
     ['o_part_types', 'Part types', 'part_type_desc', 'part_type_desc', [], [], []],
     #    ['o_parts', 'Parts', 'nme,part_type_id,dsc,quant', 'nme', ['quant'], [], []],
 ]
@@ -25,13 +26,11 @@ def_lp_jobs = [ # proj_id, job_num, job_id, details
 
 def_lp_job_steps = [ # job_id, job_num, step_num, job_type, details, sql_to_run
     
-
-    [ 'LOAD_DATA', 0, 1, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\p_menu.csv', '', 'Load ref file CSV files into own tables', '', ''],
-    [ 'LOAD_DATA', 0, 2, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\o_interface.csv', '', 'Load ref file CSV files into own tables', '', ''],
-    [ 'LOAD_DATA', 0, 3, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\o_parts.csv', '', 'Load ref file CSV files into own tables', '', ''],
-    [ 'LOAD_DATA', 0, 4, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\o_feature.csv', '', 'Load ref file CSV files into own tables', '', ''],
-    [ 'LOAD_DATA', 0, 5, 'CSV', r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\data\f_feature_interface.csv', '', 'Load ref file CSV files into own tables', '', ''],
-
+    [ 'LOAD_DATA', 0, 1, 'CSV', os.path.join(data_folder, 'p_menu.csv'), '', 'Load ref file CSV files into own tables', '', ''],
+    [ 'LOAD_DATA', 0, 2, 'CSV', os.path.join(data_folder, 'o_interface.csv'), '', 'Load ref file CSV files into own tables', '', ''],
+    [ 'LOAD_DATA', 0, 3, 'CSV', os.path.join(data_folder, 'o_parts.csv'), '', 'Load ref file CSV files into own tables', '', ''],
+    [ 'LOAD_DATA', 0, 4, 'CSV', os.path.join(data_folder, 'o_feature.csv'), '', 'Load ref file CSV files into own tables', '', ''],
+    [ 'LOAD_DATA', 0, 5, 'CSV', os.path.join(data_folder, 'f_feature_interface.csv'), '', 'Load ref file CSV files into own tables', '', ''],
 
 ]
 
@@ -48,10 +47,9 @@ def main():
     try:
         os.remove(db_file)
     except Exception as ex:
-        if '[WinError 32]' in str(ex):
-            print('Whoops - you left the database open - ' + str(ex))
-            sys.exit()
-        pass
+        print('Whoops - you may have left the database open - ' + str(ex))
+        sys.exit()
+
     if_sqllite.create_database(db_file)
     conn = sqlite3.connect(db_file)
     setup_tables(conn)
@@ -101,7 +99,7 @@ where prt.part_type_id = tp.id
 select id, menu_id, parent_id, sort_order, menu_text, help_text,
 'fn_' || menu_id || '.py' as script_name,
 'from ' || lower(parent_id) || ' import fn_' || menu_id || ' as mod_' || lower(menu_id) as script_import,
-'C:\C_DATA\dev\src\acute_experiment\cyberdeck\src\' || lower(menu_id) || '\' as script_folder
+'/home/duncan/dev/src/python/acute-experiments/cyberdeck/src/' || lower(menu_id) || '/' as script_folder
  from p_menu
 """)
 

@@ -5,11 +5,9 @@
 import os 
 import sys 
 import sqlite3
-
-sys.path.append(r"C:\C_DATA\dev\src\procgen\src\genCode")
 import utils
 
-base_folder = r'C:\C_DATA\dev\src\acute_experiment\cyberdeck\src'
+base_folder = r'/home/duncan/dev/src/python/acute-experiments/cyberdeck/src'
 
 
 prog_template = """
