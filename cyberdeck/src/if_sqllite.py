@@ -140,7 +140,7 @@ def get_data(conn, sql, param):
     #lg(LOG_INFO, 'running SQL ' + sql)
     try:
         c = conn.cursor()
-        #print('get_data - sql = ' + sql + ' , param = ' + str(param))
+        print('get_data - sql = ' + sql + ' , param = ' + str(param))
         c.execute(sql, param)
         rows = c.fetchall()
         return rows

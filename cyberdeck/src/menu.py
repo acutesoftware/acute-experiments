@@ -4,8 +4,11 @@
 # written by Duncan Murray 24/1/2024
 # This is the main menu to be run on the cyberdeck
 import sqlite3
-import utils
 import sys
+import os
+import if_sqllite
+root_folder =  os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + os.sep + ".." )
+db_file = os.path.join(root_folder, 'data', 'buildr.db')
 
 def main():
     print('WELCOME TO CYBERDECK')
@@ -13,9 +16,9 @@ def main():
 
 def main_menu_loop():
     current_menu = 'ROOT'
-    conn = sqlite3.connect(utils.db_file)
+    conn = sqlite3.connect(db_file)
     menu_sql = 'SELECT id, parent_id, menu_id, sort_order,menu_text,help_text FROM p_menu'
-    res = utils.get_data(conn, menu_sql, [])
+    res = if_sqllite.get_data(conn, menu_sql, [])
     #for row in res:
     #    print(row)
 
